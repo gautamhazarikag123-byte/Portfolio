@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b6861">
+
+  <title>Thank You | Gautam Hazarika</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./css/style.css?v=20260621-7">
+
+  <style>
+    :root {
+      --ink: #111111;
+      --paper: #f5f2eb;
+      --white: #ffffff;
+      --lime: #d7ee8a;
+      --teal: #0b6861;
+      --teal-dark: #064b46;
+      --muted: #5f5a53;
+      --line: rgba(17, 17, 17, 0.18);
+      --page-padding: clamp(22px, 5vw, 76px);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      min-height: 100svh;
+      overflow-x: hidden;
+      background: var(--teal);
+      color: var(--white);
+      font-family: "DM Sans", Arial, sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .thank-you-page {
+      min-height: 100svh;
+      padding: clamp(28px, 4vw, 58px) var(--page-padding);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .thank-you-brand {
+      width: max-content;
+      font: 800 24px "Manrope", Arial, sans-serif;
+      text-transform: uppercase;
+    }
+
+    .thank-you-grid {
+      width: 100%;
+      margin: auto 0;
+      padding: clamp(40px, 5vw, 70px) 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.56fr);
+      align-items: center;
+      gap: clamp(40px, 6vw, 90px);
+    }
+
+    .thank-you-kicker {
+      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .thank-you-copy h1 {
+      max-width: 760px;
+      color: var(--lime);
+      font: 800 clamp(46px, 4.4vw, 68px)/1.1 "Manrope", Arial, sans-serif;
+      letter-spacing: -0.035em;
+    }
+
+    .thank-you-copy h1 span {
+      display: block;
+    }
+
+    .thank-you-copy h1 span + span {
+      margin-top: 0.12em;
+    }
+
+    .thank-you-message {
+      max-width: 650px;
+      margin-top: 34px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: clamp(18px, 1.5vw, 22px);
+      line-height: 1.7;
+    }
+
+    .thank-you-actions {
+      margin-top: 36px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+
+    .thank-you-button {
+      min-height: 64px;
+      padding: 0 25px;
+      display: inline-flex;
+      align-items: center;
+      gap: 28px;
+      background: var(--lime);
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      box-shadow: 10px 10px 0 var(--teal-dark);
+    }
+
+    .thank-you-back {
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .thank-you-next {
+      padding: clamp(28px, 3.5vw, 44px);
+      border-top: 6px solid var(--lime);
+      background: var(--paper);
+      color: var(--ink);
+      box-shadow: 16px 16px 0 var(--teal-dark);
+    }
+
+    .thank-you-next > span {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .thank-you-next h2 {
+      margin: 8px 0 30px;
+      font: 800 clamp(28px, 3vw, 42px) "Manrope", Arial, sans-serif;
+    }
+
+    .thank-you-next article {
+      padding: 22px 0;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .thank-you-next article > span {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .thank-you-next h3 {
+      font: 700 19px "Manrope", Arial, sans-serif;
+    }
+
+    .thank-you-next article p {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 900px) {
+      .thank-you-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .thank-you-next {
+        width: min(720px, 100%);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .thank-you-page {
+        padding-inline: 22px;
+      }
+
+      .thank-you-grid {
+        padding: 52px 0;
+        gap: 42px;
+      }
+
+      .thank-you-copy h1 {
+        font-size: clamp(44px, 12vw, 58px);
+        line-height: 1.12;
+      }
+
+      .thank-you-actions {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .thank-you-next {
+        padding: 30px 24px;
+        box-shadow: 9px 9px 0 var(--teal-dark);
+      }
+    }
+  </style>
+</head>
+
+<body class="thank-you-body">
+  <main class="thank-you-page">
+    <a class="thank-you-brand" href="index.html#home">Gautam</a>
+
+    <div class="thank-you-grid">
+      <section class="thank-you-copy reveal visible">
+        <p class="thank-you-kicker">Project brief prepared</p>
+
+        <h1>
+          <span>Thank you.</span>
+          <span>Let us build.</span>
+        </h1>
+
+        <p class="thank-you-message">
+          Your project details are ready. Use the button below to open
+          WhatsApp and send the prepared message to complete your
+          enquiry.
+        </p>
+
+        <div class="thank-you-actions">
+          <a
+            class="hero-button thank-you-button magnetic"
+            id="finishWhatsApp"
+            href="https://wa.me/916003035529"
+            target="_blank"
+            rel="noopener"
+          >
+            Continue on WhatsApp
+            <span>&nearr;</span>
+          </a>
+
+          <a class="thank-you-back" href="index.html#home">
+            Back to home &rarr;
+          </a>
+        </div>
+      </section>
+
+      <aside class="thank-you-next reveal visible">
+        <span>What happens next</span>
+        <h2>Simple and clear.</h2>
+
+        <article>
+          <span>01</span>
+          <div>
+            <h3>Send your brief</h3>
+            <p>Complete the prepared WhatsApp message.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>02</span>
+          <div>
+            <h3>I review the details</h3>
+            <p>I will look at your business, goals, and timeline.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>03</span>
+          <div>
+            <h3>You get clear next steps</h3>
+            <p>I will reply with a practical way forward.</p>
+          </div>
+        </article>
+      </aside>
+    </div>
+  </main>
+
+  <script src="./js/script.js?v=20260621-7"></script>
+</body>
+</html>
